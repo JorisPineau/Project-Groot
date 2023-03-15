@@ -1,0 +1,22 @@
+:root {
+    --color-primary: ;
+    --color-secondary: ;
+    --color-tertiary: ;
+    --light: ; 
+    --dark: ;
+    --text-paragraph: ;
+    --text-title: ;
+    --spacing-0: 0.5rem;
+    --spacing-1: 1rem;
+    --spacing-2: 2rem;  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
