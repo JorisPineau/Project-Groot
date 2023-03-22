@@ -1,59 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Project-Groot</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        
-        <nav>
-            <div class="logo">
-
-            </div>
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">presentation</a></li>
-                <li><a href="">experiences</a></li>
-                <li><a href="">competences</a></li>
-                <li><a href="">hobbies</a></li>
-            </ul>
-        </nav>
-        <h1>
-
-        </h1>
-
+      <nav>
+        <div class="logo"></div>
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">presentation</a></li>
+          <li><a href="">experiences</a></li>
+          <li><a href="">competences</a></li>
+          <li><a href="">hobbies</a></li>
+        </ul>
+      </nav>
+      <h1></h1>
     </header>
     <main>
-        <section class="presentation">
-            <h1>presentation</h1>
+      <section class="presentation">
+        <h1>presentation</h1>
+      </section>
+      <section class="experiences">
+        <h1>experiences</h1>
+      </section>
+      <section class="competences">
+        <h1>competences</h1>
+      </section>
 
-        </section>
-        <section class="experiences">
-            <h1>experiences</h1>
+      <section class="hobbies">
+        <!-- Section hobbies -->
+        <h1>hobbies</h1>
+        <div class="container-menu">
+          <!-- Groot picture -->
+          <div class="btn-menu">
+            <img src="assets/images/cute_groot.png" alt="groot's picture" />
+          </div>
+          <!-- icones bouton hobbies -->
+          <div
+            class="blob blob-1"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-music.png"
+              alt="pictogram music"
+              class="icone"
+            />
+          </div>
+          <div
+            class="blob blob-2"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal2"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-cosplay.png"
+              alt="pictogram cosplay"
+              class="icone"
+            />
+          </div>
+          <div
+            class="blob blob-3"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal3"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-dance.png"
+              alt="pictogram dance"
+              class="icone"
+            />
+          </div>
+          <div
+            class="blob blob-4"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal4"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-game.png"
+              alt="pictogram video game"
+              class="icone"
+            />
+          </div>
+          <div
+            class="blob blob-5"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal5"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-game.png"
+              alt="pictogram video game"
+              class="icone"
+            />
+          </div>
+          <div
+            class="blob blob-6"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal6"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-game.png"
+              alt="pictogram video game"
+              class="icone"
+            />
+          </div>
+          <div
+            class="blob blob-7"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal7"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-game.png"
+              alt="pictogram video game"
+              class="icone"
+            />
+          </div>
+          <div
+            class="blob blob-8"
+            id="modal-trigger"
+            role="button"
+            data-target="#modal8"
+            data-toggle="modal"
+          >
+            <img
+              src="assets/images/picto-game.png"
+              alt="pictogram video game"
+              class="icone"
+            />
+          </div>
+        </div>
 
-        </section>
-        <section class="competences">
-            <h1>competences</h1>
+        <!-- Modale 1 : Musique -->
+        <div class="modal-container" id="modal" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
 
-        </section>
-        <section class="hobbies">
-            <h1>hobbies</h1>
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img1"></div>
+              <h1>Groot aime la musique</h1>
+              <p class="text-modal">
+                Un des passe temps à Groot est d'écouter la musique. Depuis
+                qu'il est aux côtés des Gardiens de la Galaxie, Peter Quill à
+                fait découvrir à Groot sa passion qui lui rapelle son époque
+                quand il était sur Terre.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        </section>
+        <!-- Modale 2 : Cosplay -->
+        <div class="modal-container" id="modal2" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img2"></div>
+              <h1>Groot aime ce déguiser</h1>
+              <p class="text-modal">
+                Cela peut surprendre ! En effet Groot est RP ! Il aime se
+                déguiser et prend son rôle très sérieux.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modale 3 : Danse -->
+        <div class="modal-container" id="modal3" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img3"></div>
+              <h1>Groot aime danser</h1>
+              <p class="text-modal">
+                Depuis ce renaissance, Groot se comporte comme un enfant. Dès
+                qu'il entend de la musique, Groot se met dans l'ambiance et ne
+                peut s'empêcher de danser même si ces compagnons se battent
+                juste à côté de lui !
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modale 4 : Jeux vidéo -->
+        <div class="modal-container" id="modal4" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img4"></div>
+              <h1>Groot aime jouer aux jeux vidéos</h1>
+              <p class="text-modal">
+                Lorsque Groot était un petit arbuste, il aimait déjà toucher à
+                tous les boutons autours de lui. En particulier des détonateurs.
+                Lorsqu'il atteint l'adoslence, Groot ne pense qu'à jouer aux
+                jeux vidéos dans sa chambre et déteste être dérangé.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modale 5 : Nourriture -->
+        <div class="modal-container" id="modal5" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img5"></div>
+              <h1>Groot aime manger</h1>
+              <p class="text-modal">
+                Groot adore manger des cochonneries. Dès qu'il en a l'occasion,
+                il dévore chips, bonbons et pleins d'autres sucreries.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modale 6 : Plantes -->
+        <div class="modal-container" id="modal6" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img6"></div>
+              <h1>Groot aime les plantes</h1>
+              <p class="text-modal">
+                Groot considère ces semblables comme des frères et soeurs. Il
+                s'occupe d'eux en les parlant, les câlinant et en les
+                nourrissant.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modale 7 : Lecture -->
+        <div class="modal-container" id="modal7" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img7"></div>
+              <h1>Groot aime lire des BD</h1>
+              <p class="text-modal">
+                Groot adore passer le temps à lire des livres. En particulier
+                des Comics !
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modale 8 : Art -->
+        <div class="modal-container" id="modal8" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button
+                class="close-modal"
+                id="modal-trigger"
+                data-dismiss="dialog"
+              >
+                X
+              </button>
+              <div class="modal-image-container img8"></div>
+              <h1>Groot aime dessiner</h1>
+              <p class="text-modal">
+                Groot possède un esprit très créatif. Comme les enfants, il
+                adore dessiner. Il montre son affection en dessinant les membres
+                de son groupe qui pour lui, représente sa famille.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <section class="contact">
-            <div class="formulaire">
-                
-
-            </div>
-        </section>
-
-    </footer>   
-</body>
-<script src="script.js"></script>
+      <section class="contact">
+        <div class="formulaire"></div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

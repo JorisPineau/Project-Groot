@@ -6,28 +6,38 @@
 
 
 :root {
+    /* colors */
     --color-primary: #D4D5A4;
     --color-secondary: rgb(2, 15, 2);
     --color-degrade: ;
     --light:white; 
     --dark: black;
+    
+    /* text style */
     --text-family-paragraph: 'roboto'; 
     --text-family-title: 'Up-and-Down'; 
     --text-size-paragraph: 1rem;
     --text-size-title: 2.5rem;
+    
+    /* spacing */
     --spacing-0: 0.5rem;
     --spacing-1: 1rem;
     --spacing-2: 2rem;  
     --spacing-3: 3rem;
+
+    /* z-index */
+    --firstplan: 4;
+    --secondplan: 3;
+    --thirdplan: 2;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: var(--color-primary);
 }
 
@@ -52,5 +62,315 @@ nav ul li a {
     padding: var(--spacing-2);
     font-size: var(--text-size-title);
     font-family: 'Up-and-Down', sans-serif;  
+}
+
+/* HOBBIES */
+.hobbies {
+    background-image: url(assets/images/glow-forest.jpg);
+    background-size: cover;
+    height: 60vw;
+
+    position: relative;
+}
+
+.container-menu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 40vw;
+}
+
+/* Style Groot picture */
+.btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.2s ease-in-out;
+
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    z-index: var(--secondplan);
+}
+
+.btn-menu img {
+    height: 100%;
+    width: 100%;
+}
+
+.btn-menu img:hover {
+    cursor: pointer;
+}
+
+/* Style icones */
+.blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-primary);
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blob img {
+    width: 5vw;
+}
+
+.blob:hover {
+    background: green;
+    filter: drop-shadow(0px 0px 20px rgba(128, 255, 0, 0.546));
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+/* Animation retour icone */
+.blob-1 {
+    transition: left 0.2s 0.1s ease-in-out,
+    top top 0.5s 0.1s ease-in-out;
+}
+.blob-2 {
+    transition: left 0.3s 0.1s ease-in-out,
+    top 0.3s 0.1s ease-in-out;
+}
+.blob-3 {
+    transition: left 0.4s 0.1s ease-in-out,
+    top 0.4s 0.1s ease-in-out;
+}
+.blob-4 {
+    transition: left 0.5s 0.1s ease-in-out,
+    top 0.5s 0.1s ease-in-out;
+}
+.blob-5 {
+    transition: left 0.6s 0.1s ease-in-out,
+    top 0.6s 0.1s ease-in-out;
+}
+.blob-6 {
+    transition: left 0.7s 0.1s ease-in-out,
+    top 0.7s 0.1s ease-in-out;
+}
+.blob-7 {
+    transition: left 0.8s 0.1s ease-in-out,
+    top 0.8s 0.1s ease-in-out;
+}
+.blob-8 {
+    transition: left 0.9s 0.1s ease-in-out,
+    top 0.9s 0.1s ease-in-out;
+}
+
+/* Animation bouton menu cercle */
+.container-menu.active .btn-menu {
+    filter: drop-shadow(0px 0px 20px rgba(128, 255, 0, 0.546));
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Animation bouton icone */
+.container-menu.active .blob-1 {
+    left: 50%;
+    top: 0;
+    transition: left 0.2s 0.1s ease-in-out,
+    top 0.2s 0.1s ease-in-out;
+}
+
+.container-menu.active .blob-2 {
+    left: 85%;
+    top: 15%;
+    transition: left 0.3s 0.1s ease-in-out,
+    top 0.3s 0.1s ease-in-out;
+}
+
+.container-menu.active .blob-3 {
+    left: 100%;
+    transition: left 0.4s 0.1s ease-in-out,
+    top 0.4s 0.1s ease-in-out;
+}
+
+.container-menu.active .blob-4 {
+    left: 85%;
+    top: 85%;
+    transition: left 0.5s 0.1s ease-in-out,
+    top 0.5s 0.1s ease-in-out;
+}
+
+.container-menu.active .blob-5 {
+    top: 100%;
+    transition: left 0.6s 0.1s ease-in-out,
+    top 0.6s 0.1s ease-in-out;
+}
+.container-menu.active .blob-6 {
+    left: 15%;
+    top: 85%;
+    transition: left 0.7s 0.1s ease-in-out,
+    top 0.7s 0.1s ease-in-out;
+}
+.container-menu.active .blob-7 {
+    left: 0;
+    transition: left 0.8s 0.1s ease-in-out,
+    top 0.8s 0.1s ease-in-out;
+}
+.container-menu.active .blob-8 {
+    left: 15%;
+    top: 15%;
+    transition: left 0.9s 0.1s ease-in-out,
+    top 0.9s 0.1s ease-in-out;
+}
+
+/* Style modale */
+.modal-container {
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+    z-index: var(--firstplan);
+}
+
+/* Animation modale */
+.modal-container.active {
+    /* display: block; */
+    visibility: visible;
+}
+
+/* Style overlay arrière-plan */
+.overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+
+/* Animation overlay */
+.modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+/* Style modale */
+.modal {
+    overflow: auto;
+    opacity: 0;
+    width: 40vw;
+    height: 45vh;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-in-out,
+    transform 0.4s ease-out;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-image-container {
+
+    width: 100%;
+    height: 60%;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Images modales */
+.modal-image-container.img1 {
+    background: url(assets/images/groot-modal-music.jpeg);
+    background-position: 0 -6rem ;
+    background-size: cover;
+}
+
+.img2 {
+    background: url(assets/images/groot-modal-cosplay.jpg);
+    background-position: 0rem -7rem;
+    background-size: 120%;
+}
+
+.img3 {
+    background: url(assets/images/groot-modal-dance.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.img4 {
+    background: url(assets/images/groot-modal-game.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img5 {
+    background: url(assets/images/groot-modal-food.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img6 {
+    background: url(assets/images/groot-modal-nature.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img7 {
+    background: url(assets/images/groot-modal-book.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img8 {
+    background: url(assets/images/groot-modal-draw.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Style contenus modales */
+.modal h1 {
+    padding: 1.5rem 5rem 0 5rem;
+}
+
+.text-modal {
+    line-height: 1.4;
+    padding: 1rem 5rem 0 5rem;
+}
+
+/* Animation modale */
+.modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s 0.2s ease-in-out,
+    transform all 0.4s 0.2s ease-in-out;
+}
+
+/* Style fermeture modale */
+.close-modal {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--text-size-paragraph);
+    color: var(--light);
+    background: green;
+    cursor: pointer;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
