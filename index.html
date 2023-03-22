@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <!-- TODO EN-TÊTE HEADER/NAVIGATION -->
   <header>
     <section id="accueil">
@@ -26,11 +25,11 @@
         </div>
 
         <ul class="links" id="links">
-          <li><a href="#accueil">Accueil</a></li>
           <li><a href="#presentation">Presentation</a></li>
           <li><a href="">Experiences</a></li>
           <li><a href="">Competences</a></li>
           <li><a href="">Hobbies</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
 
       </nav>
@@ -55,14 +54,14 @@
           Bon, au cas ou, si ma description t’as plus ou si tu cherches</br>
           quelqu’un pour t’aider, MAIS PAS BÉNÉVOLEMENT, je te laisses</br>
           découvrir mon Curriculum Vitae, en défilant juste en dessous !</p>
-        <div class="groot-dirt" />
-      </div>
+      </div>     
     </section>
+    <div class="groot-dirt"></div>
 
     <!-- TODO MAIN EXPERIENCE -->
     <section class="experiences">
-      <h1>experiences</h1>
-      
+      <h1 class="title-experiences">experiences</h1>
+
       <div class="articles">
         <div class="barre"></div>
         <div class="circle-box">
@@ -160,10 +159,12 @@
           <img src="assets/images/Thor.jpeg">
         </div>
       </div>
+    </section>
+  
 
       <!-- TODO MAIN HOBBIES -->
       <section class="hobbies">
-        <h1>hobbies</h1>
+        <h1 class="title-hobbies">hobbies</h1>
 
         <div class="container-menu">
           <!-- todo Groot picture -->
@@ -196,6 +197,7 @@
             <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
           </div>
         </div>
+      
 
         <!-- todo Modale 1 : Musique -->
         <div class="modal-container" id="modal" role="dialog">
@@ -209,7 +211,7 @@
                 X
               </button>
               <div class="modal-image-container img1"></div>
-              <h1>Groot aime la musique</h1>
+              <h2>Groot aime la musique</h2>
               <p class="text-modal">
                 Un des passe temps à Groot est d'écouter la musique. Depuis
                 qu'il est aux côtés des Gardiens de la Galaxie, Peter Quill à
@@ -232,7 +234,7 @@
                 X
               </button>
               <div class="modal-image-container img2"></div>
-              <h1>Groot aime ce déguiser</h1>
+              <h2>Groot aime ce déguiser</h2>
               <p class="text-modal">
                 Cela peut surprendre ! En effet Groot est RP ! Il aime se
                 déguiser et prend son rôle très sérieux.
@@ -253,7 +255,7 @@
                 X
               </button>
               <div class="modal-image-container img3"></div>
-              <h1>Groot aime danser</h1>
+              <h2>Groot aime danser</h2>
               <p class="text-modal">
                 Depuis ce renaissance, Groot se comporte comme un enfant. Dès
                 qu'il entend de la musique, Groot se met dans l'ambiance et ne
@@ -276,7 +278,7 @@
                 X
               </button>
               <div class="modal-image-container img4"></div>
-              <h1>Groot aime jouer aux jeux vidéos</h1>
+              <h2>Groot aime jouer aux jeux vidéos</h2>
               <p class="text-modal">
                 Lorsque Groot était un petit arbuste, il aimait déjà toucher à
                 tous les boutons autours de lui. En particulier des détonateurs.
@@ -299,7 +301,7 @@
                 X
               </button>
               <div class="modal-image-container img5"></div>
-              <h1>Groot aime manger</h1>
+              <h2>Groot aime manger</h2>
               <p class="text-modal">
                 Groot adore manger des cochonneries. Dès qu'il en a l'occasion,
                 il dévore chips, bonbons et pleins d'autres sucreries.
@@ -320,7 +322,7 @@
                 X
               </button>
               <div class="modal-image-container img6"></div>
-              <h1>Groot aime les plantes</h1>
+              <h2>Groot aime les plantes</h2>
               <p class="text-modal">
                 Groot considère ces semblables comme des frères et soeurs. Il
                 s'occupe d'eux en les parlant, les câlinant et en les
@@ -342,7 +344,7 @@
                 X
               </button>
               <div class="modal-image-container img7"></div>
-              <h1>Groot aime lire des BD</h1>
+              <h2>Groot aime lire des BD</h2>
               <p class="text-modal">
                 Groot adore passer le temps à lire des livres. En particulier
                 des Comics !
@@ -363,7 +365,7 @@
                 X
               </button>
               <div class="modal-image-container img8"></div>
-              <h1>Groot aime dessiner</h1>
+              <h2>Groot aime dessiner</h2>
               <p class="text-modal">
                 Groot possède un esprit très créatif. Comme les enfants, il
                 adore dessiner. Il montre son affection en dessinant les membres
@@ -374,12 +376,12 @@
         </div>
       </section>
   </main>
-  
+
   <footer>
 
     <!-- TODO FOOTER CONTACT -->
     <section class="contact">
-
+      <h1 class="title-contact">hobbies</h1>
       <!-- todo Formulaire -->
       <div class="form">
         <form action="formulaire" id="formulaire" method="POST">
@@ -434,7 +436,6 @@
 
   </footer>
 </body>
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>

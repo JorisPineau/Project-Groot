@@ -23,7 +23,7 @@
     --text-size-title: 4rem;
     --text-size-title-mobile: 3rem;
 
-    /* espcement */
+    /* espacement */
     --spacing-0: 0.5rem;
     --spacing-1: 1rem;
     --spacing-2: 2rem;  
@@ -54,18 +54,19 @@ header {
     padding: 0px;
     margin: 0px;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 nav {
     background: linear-gradient(to bottom,  rgba(0, 0, 0, 0.751) 0%,rgba(0, 0, 0, 0.567),rgba(0,0,0,0));
-    padding-bottom: 6rem;
-    padding-top: 1rem;
+    padding-bottom: calc(var(--spacing-3) * 2);
+    padding-top: var(--spacing-1);
 
 }
 
 nav ul {
     margin: 0;
-    padding: var(--spacing-2);
+    padding: var(--spacing-1);
     gap: var(--spacing-3);
     list-style-type: none;
     display: flex; 
@@ -79,27 +80,24 @@ nav ul li a {
     -webkit-text-fill-color: transparent;
     padding: var(--spacing-2);
     font-size: var(--text-size);
-    font-family: 'Up-and-Down', sans-serif;  
-}
-
-main {
-    background-color: var(--color-primary);
-    position: relative;
-    min-height: 800px;
+    font-family: 'Up-and-Down', sans-serif;
+    text-decoration: none;
 }
 
 .groot-mini {
     position: absolute;
-    bottom: 340px;
-    left: 6rem;
-    height: 38rem;
-    filter : drop-shadow(0.5rem 0.4rem 0.2rem rgba(0, 0, 0, 0.384));
+    bottom: -113px;
+    left: calc(var(--spacing-3) * 2);
+    height: 35rem;
+    filter : drop-shadow(-1rem 2rem 0.2rem rgba(0, 0, 0, 0.184));
     z-index: 2;
 }
 
+.description {
+    padding-top: var(--spacing-2);
+}
 
-
-.presentation h1 {
+h1 {
     background: linear-gradient(180deg, #7DD84C 65%, #2e7d07 140%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -107,7 +105,10 @@ main {
     filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
     font-family: 'Up-and-Down' , sans-serif;
     font-size: var(--text-size-title);
-    padding-top: 3.5rem;
+}
+
+.title-experiences, .title-hobbies, .title-contact {
+    padding: 3rem 0 0 5rem;
 }
 
 .presentation p {
@@ -134,16 +135,17 @@ main {
 
 .groot-dirt {
     background-image: url(assets/images/groot-dirt.jpg);
-    width: 100%;
-    height: 471px;
-    padding: 0px;
-    margin: 0px;
+    background-attachment: fixed;
     background-size: cover;
-    z-index: -1;
+    background-position: center;
+    object-fit: cover;
+    height: 500px;
 }
 
+
+/* TODO MAIN EXPERIENCE# */
 .experiences {
-    min-height: 200rem;
+    height: 142rem;
     background-color: green;
 }
 
@@ -238,7 +240,8 @@ main {
 .hobbies {
     background-image: url(assets/images/glow-forest.jpg);
     background-size: cover;
-    height: 60vw;
+    background-attachment: fixed;
+    height: 100vh;
 
     position: relative;
 }
@@ -248,8 +251,8 @@ main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
 }
 
 /* Style Groot picture */
@@ -264,8 +267,8 @@ main {
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.2s ease-in-out;
 
-    height: 25vw;
-    width: 25vw;
+    height: 20vw;
+    width: 20vw;
     border-radius: 50%;
     z-index: var(--secondplan);
 }
@@ -277,6 +280,7 @@ main {
 
 .btn-menu img:hover {
     cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(128, 255, 0, 0.546));
 }
 
 /* Style icones */
@@ -545,6 +549,7 @@ main {
 }
 
 /* TODO CONTACT */
+
 .text-footer {
     font-family: var(--text-family-paragraph);
 }
@@ -555,39 +560,25 @@ main {
     gap: var(--spacing-3);
 }
 
+
 .form {
     display: flex;
     flex-direction: column;
     width: 35vw;
     padding: var(--spacing-2);
-
     box-shadow: 0px 2px 20px 1px rgba(35, 160, 35, 0.3);
     border-radius: var(--spacing-0);  
     margin-bottom: var(--spacing-2);
     gap: calc(var(--spacing-3)*1.5);
 }
-
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 35vw;
-    height: 50rem;
-    padding: var(--spacing-2);
-    margin-top: 5rem;
-
-    box-shadow: 0px 2px 20px 1px rgba(35, 160, 35, 0.3);
-    border-radius: var(--spacing-0);
-    margin-bottom: var(--spacing-2);
-    gap: calc(var(--spacing-3)*1.5);
-   }
-
+    
 .form label {
-        color: var(--color-secondary);
-        font-family: var(--text-family-paragraph);
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        margin-top: 1.5rem;
+    color: var(--color-secondary);
+    font-family: var(--text-family-paragraph);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
 }
 
 #formulaire input, #formulaire textarea, #formulaire select {
@@ -607,7 +598,7 @@ main {
     margin-top: var(--spacing-3);
     resize: none;
 }
-
+    
 #formulaire button {
     font-family: var(--text-family-paragraph);
     text-transform: uppercase;
@@ -641,6 +632,7 @@ main {
     color: var(--color-tertiary);
 }
 
+    
 .contact-info p {
     color: var(--color-tertiary);
     font-weight: bold;
@@ -657,8 +649,8 @@ main {
     display: flex;
     gap: var(--spacing-1);
 }
-
-.circle-logo {
+    
+    .circle-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -680,6 +672,7 @@ main {
     left: 0px;
 }
 
+
 @media screen and (max-width: 600px) {
     main img {
         display: none;
@@ -695,18 +688,19 @@ main {
         padding-right:1rem;
         filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
         transition: left 0.5s ease;
+
     }
 
-    .burger svg {
+.burger svg {
         width: 40px;
         height: 40px;
     }
 
-    .links {
+.links {
         display: none;
     }
 
-    .links:target {
+.links:target {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -717,12 +711,12 @@ main {
         padding-top: 2rem;
         border-radius: 2rem;
         line-height: 0.5rem;
-    }
+}
 
     header {
         height: 40vh;
         background-position: center;
-    }
+}
 
     .presentation p{
         justify-content: center;
@@ -752,3 +746,8 @@ main {
     background-color: var(--color-primary);
     }
 }   
+    
+main {
+    height: 100%;
+    background-color: var(--color-primary);
+}
