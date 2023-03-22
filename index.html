@@ -41,15 +41,18 @@
     </header>
     <main>
         
-        <img class="groot-mini" src="assets/images/groot-presentation.png" alt="groot picture" />
         
          <section class="presentation" id="presentation">
     
                 
         <div class="description">
-            <h1>Je s'appelle ...</h1>
 
-            <p>Hey ! Moi c’est GROOT ! </br>
+            <img class="groot-mini" src="assets/images/groot-presentation.png" alt="groot picture" />
+            
+
+            <h1 class="title-presentation">Je s'appelle ...</h1>
+
+            <p class="text-presentation">Hey ! Moi c’est GROOT ! </br>
                 Je suis un extraterrestre hyper intelligent ressemblant à un</br>
                 arbre de l'espèce "FLORA COLOSSUS" originaire de la PLANETE X ! </br>
                 Je possède est très très gros casier judiciaire et j’ai étais</br>
@@ -61,24 +64,71 @@
                 Bon, au cas ou, si ma description t’as plus ou si tu cherches</br>
                 quelqu’un pour t’aider, MAIS PAS BÉNÉVOLEMENT, je te laisses</br>
                 découvrir mon Curriculum Vitae, en défilant juste en dessous !</p>
+                <div class="groot-dirt" />
         </div>  
-
+            
          </section>
     
-            <section class="groot-dirt">
-                
-            </section>
-       
     </main>
-    <footer>
-        <section class="contact">
-            <div class="formulaire">
-                
 
+    <footer>
+
+            <section class="contact">
+                 <div class="form">
+                        <form action="formulaire" id="formulaire" method="POST">
+                    <input type="text" id="first-name" name="user_firstname" placeholder="Prénom">
+                    <input type="text" id="last-name" name="user_lastName" placeholder="Nom">
+                    <input type="email" id="email" name="user_email" placeholder="Email">
+                    <input type="number" id="number" name="user_number" placeholder="Numéro">
+                <label for="user_origin">Veuillez séléctionner votre origine</label>
+                    <select name="user_origin" id="user_origin">
+                        <option value="terrien">Terrien</option>
+                        <option value="wookies">Wookies</option>
+                        <option value="martien">Martien</option>
+                        <option value="robot">Robot</option>
+                    </select>
+                    <textarea name="message" id="message" name="user_message" placeholder="Message..." cols="30" rows="10"></textarea>
+                    <button type="submit">envoyer</button>
+                         </form>
+                </div>
+        
+                <div class="info">
+                     <div class="groot-footer">
+                      <img  class="groot-bye" src="assets/images/goot--contact.png" width="700px">
+                 </div>
+                     <div class="contact-info">
+                         <p class="text-footer">Chez les <span>Gardiens de la Galaxy</span> </br>
+                            Le Milano </br>
+                         </br>
+
+                
+                         Tel. : 06 56 69 75 41</br>
+
+                        groot.tree@galaxy.fr</br>
+                
+                    </div>
+                     <div class="reseaux">
+                        <div class="circle-logo">
+                          <img src="assets/images/logo-insta.png" width="28px">
+                     </div>
+                         <div class="circle-logo">
+                            <img src="assets/images/logo-tiktok.png" width="23px">
+                    </div>
+                     <div class="circle-logo">
+                             <img src="assets/images/logo-twitter.png" width="30px">
+                        </div>
+                         <div class="circle-logo">
+                              <img src="assets/images/logo-youtube.png" width="33px">
+                      </div>
+                         <div class="circle-logo">
+                             <img src="assets/images/logo-fb.png" width="15px">
+                        </div>
+                    </div>
             </div>
         </section>
-
-    </footer>   
-</body>
-<script src="script.js"></script>
-</html>
+        
+        </footer>
+         
+    </body>
+        <script src="script.js"></script>
+    </html>
