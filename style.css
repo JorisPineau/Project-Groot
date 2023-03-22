@@ -7,14 +7,19 @@
 
 :root {
     --color-primary: #D4D5A4;
-    --color-secondary: rgb(8, 53, 8);
+    --color-secondary: rgb(2, 15, 2);
+    --color-tertiary: #1A4C1F;
     --color-degrade: color: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    --color-text: #7DD84C;
+    --color-contact: #57B925;
     --light:white; 
     --dark: black;
     --text-family-paragraph: 'roboto'; 
     --text-family-title: 'Up-and-Down'; 
     --text-size-paragraph: 1rem;
-    --text-size-title: 2.5rem;
+    --text-size: 2.5rem;
+    --text-size-title: 4rem;
+    --text-size-title-mobile: 3rem;
     --spacing-0: 0.5rem;
     --spacing-1: 1rem;
     --spacing-2: 2rem;  
@@ -25,40 +30,110 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
-
-    background-color: var(--color-primary);
-    font-family: var(--text-family-paragraph);
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-image: url(assets/images/groot-header.jpg);
-    background-size: cover;
     width: 100%;
     height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+}
+
+nav {
+    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0.751) 0%,rgba(0, 0, 0, 0.567),rgba(0,0,0,0));
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+
 }
 
 nav ul {
     margin: 0;
     padding: var(--spacing-2);
+    gap: var(--spacing-3);
    list-style-type: none;
-   display: flex;   
+   display: flex; 
+   flex-wrap: wrap;  
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    background: linear-gradient(180deg, #7DD84C 40%, #2e7d07 55%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: var(--spacing-2);
-    font-size: var(--text-size-title);
+    font-size: var(--text-size);
     font-family: 'Up-and-Down', sans-serif;  
 }
 
 
 
+main {
+    background-color: var(--color-primary);
+     position: relative;
+    min-height: 800px;
+}
 
-/* EXPERIENCE */
+.groot-mini {
+    position: absolute;
+    bottom: 340px;
+    left: 6rem;
+    height: 38rem;
+    filter : drop-shadow(0.5rem 0.4rem 0.2rem rgba(0, 0, 0, 0.384));
+    z-index: 2;
+}
+
+
+
+.presentation h1 {
+    background: linear-gradient(180deg, #7DD84C 65%, #2e7d07 140%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
+    font-family: 'Up-and-Down' , sans-serif;
+    font-size: var(--text-size-title);
+    padding-top: 3.5rem;
+}
+
+.presentation p {
+    color: var(--color-tertiary);
+    padding : 2rem 0;
+    line-height: calc(var(--spacing-1) * 2);
+    letter-spacing: 0.1rem;
+    font-family: var(--text-family-paragraph), sans-serif;
+    font-weight:410;
+}
+
+.description {
+    background-color: var(--color-primary);
+    position: relative;
+}
+
+.presentation .title-presentation, .text-presentation {
+    margin-left: 35%;
+}
+
+.burger {
+    display: none;
+}
+
+.groot-dirt {
+    background-image: url(assets/images/groot-dirt.jpg);
+    width: 100%;
+    height: 471px;
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+    z-index: -1;
+}
 
 .experiences {
     min-height: 200rem;
@@ -160,18 +235,11 @@ nav ul li a {
     line-height: 150%;
 }
 
+<!--CONTACT--!>
 
-
-
-
-
-
-
-
-
-
-
-/* CONTACT 
+.text-footer {
+    font-family: var(--text-family-paragraph);
+}
 
 .contact {
     display: flex;
@@ -185,17 +253,43 @@ nav ul li a {
     flex-direction: column;
     width: 35vw;
     padding: var(--spacing-2);
-
+    
     box-shadow: 0px 2px 20px 1px rgba(35, 160, 35, 0.3);
     border-radius: var(--spacing-0);  
     margin-bottom: var(--spacing-2);
     gap: calc(var(--spacing-3)*1.5);
     
 }
+    
+    
+    .form {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 50rem;
+    padding: var(--spacing-2);
+    margin-top: 5rem;
+    
+    box-shadow: 0px 2px 20px 1px rgba(35, 160, 35, 0.3);
+    border-radius: var(--spacing-0);
+    margin-bottom: var(--spacing-2);
+    gap: calc(var(--spacing-3)*1.5);
+    
+    }
+    
+    .form label {
+        color: var(--color-secondary);
+        font-family: var(--text-family-paragraph);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
 
+    
 
-#formulaire input, textarea {
-    background-color: #feffd5;
+    #formulaire input, #formulaire textarea, #formulaire select {
+    background-color: #FDFEDD;
     width: 100%;
     padding: var(--spacing-1);
     margin: var(--spacing-0) 0;
@@ -204,7 +298,7 @@ nav ul li a {
     font-weight: bold;
     border-radius: var(--spacing-0);
     border: 1px solid #f6f7b9;
-    color: green;
+    color: var(--color-tertiary);
 }
 
 #formulaire textarea {
@@ -212,72 +306,165 @@ nav ul li a {
     resize: none;
 }
 
-#formulaire button {
+    
+    #formulaire button {
     font-family: var(--text-family-paragraph);
     text-transform: uppercase;
     font-size: calc(var(--text-size-paragraph) * 1);
     font-weight: bold;
     color: var(--light);
-    background-color: green;
-    border: 1px solid green;
+    background-color: var(--color-contact);
+    border: 1px solid var(--color-contact);
     border-radius: var(--spacing-0);
     padding: var(--spacing-1);
     margin-top: var(--spacing-0);
-    width: 8vw;   
+    width: 8vw; 
+    background: linear-gradient(180deg, #5FAB36 65%, #215A05 140%);
 }
 
-#formulaire button:active {
+    
+    #formulaire button:active {
     transform:scale(0.7);
     transition: 0.2s;
-}
+    }
 
-.info {
+    ::placeholder {
+        color: var(--color-secondary);
+    }
+    
+    .info {
     position: relative;
-}
-
-.contact-info {
+    }
+    
+    .contact-info {
     margin-bottom: var(--spacing-2);
-
-}
-
-.contact-info p {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
+    
+    }
+    
+    .contact-info p {
+    color: var(--color-tertiary);
     font-weight: bold;
-    line-height: var(--spacing-1);
-}
-
-.contact-info span {
+    line-height: calc(var(--spacing-1) *1.5);
+    margin-top: 5rem;
+    }
+    
+    .contact-info span {
     font-size: calc(var(--text-size-paragraph)*1.3);
-}
-
-.reseaux {
+    color: var(--color-tertiary);
+    }
+    
+    .reseaux {
     display: flex;
     gap: var(--spacing-1);
-}
-
-.circle-logo {
+    }
+    
+    .circle-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:green ;
+    background-color: var(--color-contact);
     border-radius: 50%;
     height: 50px;
     width: 50px;
-}
-
-.circle-logo:hover {
-    background: rgba(0, 128, 0, 0.493);
+    }
+    
+    .circle-logo:hover {
+    background: var(--color-contact);
     transform:scale(1.1);
     transition: 0.2s ease;
     
+    }
+    
+    .groot-footer {
+    position: absolute;
+    bottom: 0rem;
+    left: 0px;
+    }
+
+
+
+
+@media screen and (max-width: 600px) {
+    main img {
+        display: none;
+    }
+
+    nav {
+        background: none;
+    }
+    
+    .burger {
+        display: flex;
+        justify-content: end;
+        padding-right:1rem;
+        filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
+        transition: left 0.5s ease;
+        
+    }
+
+
+    .burger svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .links {
+        display: none;
+    }
+    .links:target {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 30vh;
+        padding: var(--spacing2);
+        background-color: rgba(0, 0, 0, 0.8);
+        gap : 0;
+        padding-top: 2rem;
+        border-radius: 2rem;
+        line-height: 0.5rem;
+        
+    }
+
+    header {
+        height: 40vh;
+        background-position: center;
+
+    }
+
+    .presentation p{
+        justify-content: center;
+        margin: auto;
+        padding-top: 2.6rem;
+        letter-spacing: 0;
+        line-height: var((--spacing-1) * 1,3);
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .presentation h1 {
+        font-size: var(--text-size-title-mobile);
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 2rem;
+    }
+
+
+
+    .groot-dirt {
+        background-position: center;
+        height: 25vh;
+    }
+    
+    
+main {
+    height: 100%;
+    background-color: var(--color-primary);
 }
 
-.groot-footer {
-    position: absolute;
-    bottom: 0;
-    left: 50px;  
-}
-*/
+
+    }
 
 
 
