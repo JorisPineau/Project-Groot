@@ -1,237 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Project-Groot</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Project-Groot</title>
 </head>
+
 <body>
-    <header>
-        <section id="accueil">
-        
-        <nav>
-            <div class="logo">
+  <!-- TODO EN-TÊTE HEADER/NAVIGATION -->
+  <header>
+    <section id="accueil">
+      <nav>
+        <div class="logo"></div>
+        <div id="mySidenav" class="burger">
+          <a id="closeBtn" href="#links" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </a>
+        </div>
 
+        <ul class="links" id="links">
+          <li><a href="#presentation">Presentation</a></li>
+          <li><a href="">Experiences</a></li>
+          <li><a href="">Competences</a></li>
+          <li><a href="">Hobbies</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+
+      </nav>
+    </section>
+  </header>
+
+  <!-- TODO MAIN PRESENTATION -->
+  <main>
+    <section class="presentation" id="presentation">
+      <div class="description">
+        <img class="groot-mini" src="assets/images/groot-presentation.png" alt="groot picture" />
+        <h1 class="title-presentation">Je s'appelle ...</h1>
+        <p class="text-presentation">Hey ! Moi c’est GROOT ! </br>
+          Je suis un extraterrestre hyper intelligent ressemblant à un</br>
+          arbre de l'espèce "FLORA COLOSSUS" originaire de la PLANETE X ! </br>
+          Je possède est très très gros casier judiciaire et j’ai étais</br>
+          longtemps considéré comme un criminel. </br>
+          Mais aujourd’hui..., Le monde me voit comme un HERO !</br>
+          Effectivement, je s’appel GROOT et en ce moment je cherche</br>
+          du travail alors... j’ai décidé de te contacter haha..</br>
+          Je suis motivé, doux, chaleureux et simple d’esprit.</br>
+          Bon, au cas ou, si ma description t’as plus ou si tu cherches</br>
+          quelqu’un pour t’aider, MAIS PAS BÉNÉVOLEMENT, je te laisses</br>
+          découvrir mon Curriculum Vitae, en défilant juste en dessous !</p>
+      </div>     
+    </section>
+    <div class="groot-dirt"></div>
+
+    <!-- TODO MAIN EXPERIENCE -->
+    <section class="experiences">
+      <h1 class="title-experiences">experiences</h1>
+
+      <div class="articles">
+        <div class="barre"></div>
+        <div class="circle-box">
+          <div class="circle-article circle1" data-anim="1"></div>
+          <div class="circle-article circle2" data-anim="2"></div>
+          <div class="circle-article circle3" data-anim="3"></div>
+          <div class="circle-article circle4" data-anim="4"></div>
+          <div class="circle-article circle5" data-anim="5"></div>
+          <div class="circle-article circle6" data-anim="6"></div>
+        </div>
+
+        <div class="article-timeline article1" data-anim="1">
+          <article class="text-article">
+            <h2>Voyage sur terre</h2>
+            <p>
+              J'ai étais envoyé sur terre pour une mission qui avait pour but de prélever des spécimens humains afin de
+              les étidiers
+              sur ma planete mais élas j'ai étais vaincu par une colonnie de termites mutantes et mes reste fut récupéré
+              par
+              le shield pour me régenérer et par la suite assigné au Howling Commandos, j'ai donc pu voyager sur terre !
+            </p>
+          </article>
+          <img src="assets/images/Groot-dansLePassé.jpeg">
+        </div>
+
+        <div class="article-timeline article2" data-anim="2">
+          <article class="text-article">
+            <h2>Chasseur de prime</h2>
+            <p>
+              J’ai traversé la galaxie à la poursuite de primes avec mon coéquipier Rocket Raccoon durant plusieurs
+              années.
+              Ce qui ma permit de m’enrichir tout en devenant meilleur au combat et arrêter de nombreux méchants, et
+              donc, la discipline !
+            </p>
+          </article>
+          <img src="assets/images/Rocket Raccoon.png">
+        </div>
+
+        <div class="article-timeline article3" data-anim="3">
+          <article class="text-article">
+            <h2>Gardiens de la galaxie</h2>
+            <p>
+              J’ai rencontré mes coéquipiers dans la prison de Kyln, nous avons accepté de travailler ensemble afin de
+              pouvoir
+              nous échapper et revendre l’orbe, par la suite, nous avons formés les Gardiens de la Galaxie, toute cette
+              expérience
+              a pu me permettre d’approfondir mon travail, ainsi qu’une relation de confiance et de travail en équipe !
+            </p>
+          </article>
+          <img src="assets/images/Guardians-of-the-Galaxy.png">
+        </div>
+
+        <div class="article-timeline article4" data-anim="4">
+          <article class="text-article">
+            <h2>Mon sacrifice et ma renaissance</h2>
+            <p>
+              Durant la bataille de Xandar face à Ronan l’Accusateur, j’ai dû sacrifier ma propre vie afin de pouvoir
+              sauver celle
+              de mes coéquipiers, heureusement une partie de mon corps fut replanté ce qui m'a permis de recussusciter.
+              Je n’ai pas que des qualitées, mais personne ne pourra contredire le fait que je suis sincère, honnête et
+              fidèle !
+            </p>
+          </article>
+          <img src="assets/images/Little-Groot.jpeg">
+        </div>
+
+        <div class="article-timeline article5" data-anim="5">
+          <article class="text-article">
+            <h2>Embauchés par les souverains</h2>
+            <p>
+              Avec les Gardiens de la galaxie, nous avons rapidement été embauchés par les souverains pour détruire
+              l’Abilisk, mais également au
+              même moment nous furent prit pour cible car par nos anciens employeurs. Cela a été une expérience hors
+              norme,
+              le fait d’accomplir une mission en même temps de me faire traquer. Mais grâce à cela, je suis plus que
+              courageux !
+            </p>
+          </article>
+          <img src="assets/images/Abilix.jpg">
+        </div>
+
+        <div class="article-timeline article6" data-anim="6">
+          <article class="text-article">
+            <h2>Au côté de Thor</h2>
+            <p>
+              J’ai rencontré Thor que j’ai pu accompagner sur Nidavellir, afin de l'aider à empêcher Thanos de compléter
+              son Gantelet d’infinité
+              et par la même occasion l’aider à obtenir son arme, “Stormbreaker”.
+              Cela m'a permis de combattre au côté de super héros plus aguerrie, tel que Thor ou d’autres Avengers. Cela
+              à donc renforcé mon
+              mental ainsi que mon expérience chez les plus grands !
+            </p>
+          </article>
+
+          <img src="assets/images/Thor.jpeg">
+        </div>
+      </div>
+    </section>
+  
+
+      <!-- TODO MAIN HOBBIES -->
+      <section class="hobbies">
+        <h1 class="title-hobbies">hobbies</h1>
+
+        <div class="container-menu">
+          <!-- todo Groot picture -->
+          <div class="btn-menu">
+            <img src="assets/images/cute_groot.png" alt="groot's picture" />
+          </div>
+          <!-- todo icones bouton hobbies -->
+          <div class="blob blob-1" id="modal-trigger" role="button" data-target="#modal" data-toggle="modal">
+            <img src="assets/images/picto-music.png" alt="pictogram music" class="icone" />
+          </div>
+          <div class="blob blob-2" id="modal-trigger" role="button" data-target="#modal2" data-toggle="modal">
+            <img src="assets/images/picto-cosplay.png" alt="pictogram cosplay" class="icone" />
+          </div>
+          <div class="blob blob-3" id="modal-trigger" role="button" data-target="#modal3" data-toggle="modal">
+            <img src="assets/images/picto-dance.png" alt="pictogram dance" class="icone" />
+          </div>
+          <div class="blob blob-4" id="modal-trigger" role="button" data-target="#modal4" data-toggle="modal">
+            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+          </div>
+          <div class="blob blob-5" id="modal-trigger" role="button" data-target="#modal5" data-toggle="modal">
+            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+          </div>
+          <div class="blob blob-6" id="modal-trigger" role="button" data-target="#modal6" data-toggle="modal">
+            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+          </div>
+          <div class="blob blob-7" id="modal-trigger" role="button" data-target="#modal7" data-toggle="modal">
+            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+          </div>
+          <div class="blob blob-8" id="modal-trigger" role="button" data-target="#modal8" data-toggle="modal">
+            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+          </div>
+        </div>
+      
+
+        <!-- todo Modale 1 : Musique -->
+        <div class="modal-container" id="modal" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- todo Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img1"></div>
+              <h2>Groot aime la musique</h2>
+              <p class="text-modal">
+                Un des passe temps à Groot est d'écouter la musique. Depuis
+                qu'il est aux côtés des Gardiens de la Galaxie, Peter Quill à
+                fait découvrir à Groot sa passion qui lui rapelle son époque
+                quand il était sur Terre.
+              </p>
             </div>
-                <div id ="mySidenav" class="burger">
-                    <a id="closeBtn" href="#links" class="close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple"
-                            class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                        </svg>
-                    </a>
-                </div>
-                      
-            <ul class="links" id="links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#presentation">Presentation</a></li>
-                <li><a href="">Experiences</a></li>
-                <li><a href="">Competences</a></li>
-                <li><a href="">Hobbies</a></li>
-            </ul>
-    
-        </nav>
-        
-        </section>
-    </header>
-    <main>
-   
-                
-        
-         <section class="presentation" id="presentation">
-    
-                
-        <div class="description">
+          </div>
+        </div>
 
+        <!-- todo Modale 2 : Cosplay -->
+        <div class="modal-container" id="modal2" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
 
-            <img class="groot-mini" src="assets/images/groot-presentation.png" alt="groot picture" />
-            
-
-            <h1 class="title-presentation">Je s'appelle ...</h1>
-
-            <p class="text-presentation">Hey ! Moi c’est GROOT ! </br>
-                Je suis un extraterrestre hyper intelligent ressemblant à un</br>
-                arbre de l'espèce "FLORA COLOSSUS" originaire de la PLANETE X ! </br>
-                Je possède est très très gros casier judiciaire et j’ai étais</br>
-                longtemps considéré comme un criminel. </br>
-                Mais aujourd’hui..., Le monde me voit comme un HERO !</br>
-                Effectivement, je s’appel GROOT et en ce moment je cherche</br>
-                du travail alors... j’ai décidé de te contacter haha..</br>
-                Je suis motivé, doux, chaleureux et simple d’esprit.</br>
-                Bon, au cas ou, si ma description t’as plus ou si tu cherches</br>
-                quelqu’un pour t’aider, MAIS PAS BÉNÉVOLEMENT, je te laisses</br>
-                découvrir mon Curriculum Vitae, en défilant juste en dessous !</p>
-                <div class="groot-dirt" />
-        </div>  
-            
-         </section>
-         
-         
-          <section class="experiences">
-
-            <h1>experiences</h1>
-            
-            
-            <div class="articles">
-
-                <div class="barre"></div>
-
-                <div class="circle-box">
-                    
-                    <div class="circle-article circle1" data-anim="1"></div>
-                    <div class="circle-article circle2" data-anim="2"></div>
-                    <div class="circle-article circle3" data-anim="3"></div>
-                    <div class="circle-article circle4" data-anim="4"></div>
-                    <div class="circle-article circle5" data-anim="5"></div>
-                    <div class="circle-article circle6" data-anim="6"></div>
-                    
-                </div>
-
-                <div class="article-timeline article1" data-anim="1">
-                    <article class="text-article"> 
-                        <h2>Voyage sur terre</h2>
-                        <p>
-                            J'ai étais envoyé sur terre pour une mission qui avait pour but de prélever des spécimens humains afin de les étidiers
-                            sur ma planete mais élas j'ai étais vaincu par une colonnie de termites mutantes et mes reste fut récupéré par
-                            le shield pour me régenérer et par la suite assigné au Howling Commandos, j'ai donc pu voyager sur terre ! 
-                        </p>
-                    </article>                    
-                    <img src="assets/images/Groot-dansLePassé.jpeg">                    
-                </div>
-
-                <div class="article-timeline article2" data-anim="2">
-                    <article class="text-article"> 
-                        <h2>Chasseur de prime</h2>
-                        <p>
-                            J’ai traversé la galaxie à la poursuite de primes avec mon coéquipier Rocket Raccoon durant plusieurs années.
-                            Ce qui ma permit de m’enrichir tout en devenant meilleur au combat et arrêter de nombreux méchants, et donc, la discipline ! 
-                        </p>
-                    </article>
-                    <img src="assets/images/Rocket Raccoon.png">                    
-                </div>
-
-                <div class="article-timeline article3" data-anim="3">
-                    <article class="text-article">
-                        <h2>Gardiens de la galaxie</h2>
-                        <p>
-                            J’ai rencontré mes coéquipiers dans la prison de Kyln, nous avons accepté de travailler ensemble afin de pouvoir
-                            nous échapper et revendre l’orbe, par la suite, nous avons formés les Gardiens de la Galaxie, toute cette expérience
-                            a pu me permettre d’approfondir mon travail, ainsi qu’une relation de confiance et de travail en équipe !
-                        </p>
-                    </article>                    
-                    <img src="assets/images/Guardians-of-the-Galaxy.png">                    
-                </div>
-
-                <div class="article-timeline article4" data-anim="4">
-                    <article class="text-article">
-                        <h2>Mon sacrifice et ma renaissance</h2>
-                        <p>
-                            Durant la bataille de Xandar face à Ronan l’Accusateur, j’ai dû sacrifier ma propre vie afin de pouvoir sauver celle 
-                            de mes coéquipiers, heureusement une partie de mon corps fut replanté ce qui m'a permis de recussusciter.
-                            Je n’ai pas que des qualitées, mais personne ne pourra contredire le fait que je suis sincère, honnête et fidèle !
-                        </p>
-                    </article>                    
-                    <img src="assets/images/Little-Groot.jpeg">                    
-                </div>
-
-                <div class="article-timeline article5" data-anim="5">
-                    <article class="text-article">
-                        <h2>Embauchés par les souverains</h2>
-                        <p>
-                            Avec les Gardiens de la galaxie, nous avons rapidement été embauchés par les souverains pour détruire l’Abilisk, mais également au 
-                            même moment nous furent prit pour cible car par nos anciens employeurs. Cela a été une expérience hors norme,
-                            le fait d’accomplir une mission en même temps de me faire traquer. Mais grâce à cela, je suis plus que courageux !
-                        </p>
-                    </article>                    
-                    <img src="assets/images/Abilix.jpg">                    
-                </div>
-
-                <div class="article-timeline article6" data-anim="6">
-                    <article class="text-article">
-                        <h2>Au côté de Thor</h2>
-                        <p>
-                            J’ai rencontré Thor que j’ai pu accompagner sur Nidavellir, afin de l'aider à empêcher Thanos de compléter son Gantelet d’infinité 
-                            et par la même occasion l’aider à obtenir son arme, “Stormbreaker”.
-                            Cela m'a permis de combattre au côté de super héros plus aguerrie, tel que Thor ou d’autres Avengers. Cela à donc renforcé mon
-                            mental ainsi que mon expérience chez les plus grands !
-                        </p>
-                    </article>                    
-                        
-                    <img src="assets/images/Thor.jpeg">   
-                </div>
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img2"></div>
+              <h2>Groot aime ce déguiser</h2>
+              <p class="text-modal">
+                Cela peut surprendre ! En effet Groot est RP ! Il aime se
+                déguiser et prend son rôle très sérieux.
+              </p>
             </div>
-    
-    </main>
+          </div>
+        </div>
 
+        <!-- todo Modale 3 : Danse -->
+        <div class="modal-container" id="modal3" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
 
-    <footer>
-
-            <section class="contact">
-                 <div class="form">
-                        <form action="formulaire" id="formulaire" method="POST">
-                    <input type="text" id="first-name" name="user_firstname" placeholder="Prénom">
-                    <input type="text" id="last-name" name="user_lastName" placeholder="Nom">
-                    <input type="email" id="email" name="user_email" placeholder="Email">
-                    <input type="number" id="number" name="user_number" placeholder="Numéro">
-                <label for="user_origin">Veuillez séléctionner votre origine</label>
-                    <select name="user_origin" id="user_origin">
-                        <option value="terrien">Terrien</option>
-                        <option value="wookies">Wookies</option>
-                        <option value="martien">Martien</option>
-                        <option value="robot">Robot</option>
-                    </select>
-                    <textarea name="message" id="message" name="user_message" placeholder="Message..." cols="30" rows="10"></textarea>
-                    <button type="submit">envoyer</button>
-                         </form>
-                </div>
-        
-                <div class="info">
-                     <div class="groot-footer">
-                      <img  class="groot-bye" src="assets/images/goot--contact.png" width="700px">
-                 </div>
-                     <div class="contact-info">
-                         <p class="text-footer">Chez les <span>Gardiens de la Galaxy</span> </br>
-                            Le Milano </br>
-                         </br>
-
-                
-                         Tel. : 06 56 69 75 41</br>
-
-                        groot.tree@galaxy.fr</br>
-                
-                    </div>
-                     <div class="reseaux">
-                        <div class="circle-logo">
-                          <img src="assets/images/logo-insta.png" width="28px">
-                     </div>
-                         <div class="circle-logo">
-                            <img src="assets/images/logo-tiktok.png" width="23px">
-                    </div>
-                     <div class="circle-logo">
-                             <img src="assets/images/logo-twitter.png" width="30px">
-                        </div>
-                         <div class="circle-logo">
-                              <img src="assets/images/logo-youtube.png" width="33px">
-                      </div>
-                         <div class="circle-logo">
-                             <img src="assets/images/logo-fb.png" width="15px">
-                        </div>
-                    </div>
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img3"></div>
+              <h2>Groot aime danser</h2>
+              <p class="text-modal">
+                Depuis ce renaissance, Groot se comporte comme un enfant. Dès
+                qu'il entend de la musique, Groot se met dans l'ambiance et ne
+                peut s'empêcher de danser même si ces compagnons se battent
+                juste à côté de lui !
+              </p>
             </div>
-        </section>
-        
-        </footer>
-        
-        </body>
+          </div>
+        </div>
 
+        <!-- todo Modale 4 : Jeux vidéo -->
+        <div class="modal-container" id="modal4" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img4"></div>
+              <h2>Groot aime jouer aux jeux vidéos</h2>
+              <p class="text-modal">
+                Lorsque Groot était un petit arbuste, il aimait déjà toucher à
+                tous les boutons autours de lui. En particulier des détonateurs.
+                Lorsqu'il atteint l'adoslence, Groot ne pense qu'à jouer aux
+                jeux vidéos dans sa chambre et déteste être dérangé.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- todo Modale 5 : Nourriture -->
+        <div class="modal-container" id="modal5" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img5"></div>
+              <h2>Groot aime manger</h2>
+              <p class="text-modal">
+                Groot adore manger des cochonneries. Dès qu'il en a l'occasion,
+                il dévore chips, bonbons et pleins d'autres sucreries.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- todo Modale 6 : Plantes -->
+        <div class="modal-container" id="modal6" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img6"></div>
+              <h2>Groot aime les plantes</h2>
+              <p class="text-modal">
+                Groot considère ces semblables comme des frères et soeurs. Il
+                s'occupe d'eux en les parlant, les câlinant et en les
+                nourrissant.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- todo Modale 7 : Lecture -->
+        <div class="modal-container" id="modal7" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img7"></div>
+              <h2>Groot aime lire des BD</h2>
+              <p class="text-modal">
+                Groot adore passer le temps à lire des livres. En particulier
+                des Comics !
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- todo Modale 8 : Art -->
+        <div class="modal-container" id="modal8" role="dialog">
+          <!-- arrière-plan modale -->
+          <div class="overlay" id="modal-trigger"></div>
+
+          <!-- Fenêtre modale -->
+          <div class="modal">
+            <div class="modal-content">
+              <button class="close-modal" id="modal-trigger" data-dismiss="dialog">
+                X
+              </button>
+              <div class="modal-image-container img8"></div>
+              <h2>Groot aime dessiner</h2>
+              <p class="text-modal">
+                Groot possède un esprit très créatif. Comme les enfants, il
+                adore dessiner. Il montre son affection en dessinant les membres
+                de son groupe qui pour lui, représente sa famille.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+
+    <!-- TODO FOOTER CONTACT -->
+    <section class="contact">
+      <h1 class="title-contact">hobbies</h1>
+      <!-- todo Formulaire -->
+      <div class="form">
+        <form action="formulaire" id="formulaire" method="POST">
+          <input type="text" id="first-name" name="user_firstname" placeholder="Prénom">
+          <input type="text" id="last-name" name="user_lastName" placeholder="Nom">
+          <input type="email" id="email" name="user_email" placeholder="Email">
+          <input type="number" id="number" name="user_number" placeholder="Numéro">
+          <label for="user_origin">Veuillez séléctionner votre origine</label>
+          <select name="user_origin" id="user_origin">
+            <option value="terrien">Terrien</option>
+            <option value="wookies">Wookies</option>
+            <option value="martien">Martien</option>
+            <option value="robot">Robot</option>
+          </select>
+          <textarea name="message" id="message" name="user_message" placeholder="Message..." cols="30"
+            rows="10"></textarea>
+          <button type="submit">envoyer</button>
+        </form>
+      </div>
+
+      <!-- todo Contact réseaux -->
+      <div class="info">
+        <div class="groot-footer">
+          <img class="groot-bye" src="assets/images/goot--contact.png" width="700px">
+        </div>
+        <div class="contact-info">
+          <p class="text-footer">Chez les <span>Gardiens de la Galaxy</span> </br>
+            Le Milano </br>
+            </br>
+            Tel. : 06 56 69 75 41</br>
+            groot.tree@galaxy.fr</br>
+        </div>
+        <div class="reseaux">
+          <div class="circle-logo">
+            <img src="assets/images/logo-insta.png" width="28px">
+          </div>
+          <div class="circle-logo">
+            <img src="assets/images/logo-tiktok.png" width="23px">
+          </div>
+          <div class="circle-logo">
+            <img src="assets/images/logo-twitter.png" width="30px">
+          </div>
+          <div class="circle-logo">
+            <img src="assets/images/logo-youtube.png" width="33px">
+          </div>
+          <div class="circle-logo">
+            <img src="assets/images/logo-fb.png" width="15px">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </footer>
+</body>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="script.js"></script>
+
 </html>
-
-
