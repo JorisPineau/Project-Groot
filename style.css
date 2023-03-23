@@ -137,6 +137,9 @@ main {
     z-index: -1;
 }
 
+footer {
+    background-color: var(--color-primary);
+}
 
 .text-footer {
     font-family: var(--text-family-paragraph);
@@ -146,7 +149,6 @@ main {
     display: flex;
     justify-content: center;
     gap: var(--spacing-3);
-    background-color: var(--color-primary);
     height: 100vh;
     }
     
@@ -187,7 +189,7 @@ main {
     font-weight: bold;
     border-radius: var(--spacing-0);
     border: 1px solid var(--color-primary);
-    color: var(--color-tertiary);
+    color: black;
     }
     
     #formulaire textarea {
@@ -216,7 +218,7 @@ main {
     }
 
     ::placeholder {
-        color: var(--color-secondary);
+        color: black;
     }
     
     .info {
@@ -349,6 +351,69 @@ main {
 main {
     height: 100%;
     background-color: var(--color-primary);
+}
+
+.groot-bye {
+    display: none;
+}
+
+.reseaux {
+    justify-content: center;
+}
+
+.form {
+    height: 70vh;
+    width: 85%;
+    margin-top: 7rem;
+    margin-left: 1.8rem;
+}
+
+.contact-info p {
+    line-height: 1rem;
+    margin-top: 0;
+}
+.presentation .title-presentation {
+    margin-left: 0;
+}
+
+.contact {
+    display: block;
+}
+
+
+
+input {
+    width: 80vh;
+    margin-left: 2rem;
+    height: 2.5rem;
+}
+
+select {
+    height: 3.3rem;
+}
+
+textarea {
+    height: 7rem;
+}
+
+#formulaire textarea {
+    margin-top: 1rem;
+}
+
+footer {
+    height: 100%;
+    background-color: var(--color-primary);
+}
+
+#formulaire button {
+width : 7rem;
+height : 3rem;
+margin-top: 0.3rem;
+}
+
+.contact-info p{
+   margin-left: 4rem;
+   font-size: small;
 }
 
 

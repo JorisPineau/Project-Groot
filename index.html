@@ -75,11 +75,11 @@
 
             <section class="contact">
                  <div class="form">
-                        <form action="formulaire" id="formulaire" method="POST">
-                    <input type="text" id="first-name" name="user_firstname" placeholder="Prénom">
-                    <input type="text" id="last-name" name="user_lastName" placeholder="Nom">
-                    <input type="email" id="email" name="user_email" placeholder="Email">
-                    <input type="number" id="number" name="user_number" placeholder="Numéro">
+                        <form action="success.php" id="formulaire" method="post">
+                    <input type="text" id="first-name" name="user_firstname" placeholder="Prénom" required>
+                    <input type="text" id="last-name" name="user_lastname" placeholder="Nom" required>
+                    <input type="email" id="email" name="user_email" placeholder="Email" required>
+                    <input type="number" id="number" name="user_number" placeholder="Numéro" required>
                 <label for="user_origin">Veuillez séléctionner votre origine</label>
                     <select name="user_origin" id="user_origin">
                         <option value="terrien">Terrien</option>
@@ -87,7 +87,7 @@
                         <option value="martien">Martien</option>
                         <option value="robot">Robot</option>
                     </select>
-                    <textarea name="message" id="message" name="user_message" placeholder="Message..." cols="30" rows="10"></textarea>
+                    <textarea type="text" id="message" name="user_message" placeholder="Message..." cols="30" rows="10" required></textarea>
                     <button type="submit">envoyer</button>
                          </form>
                 </div>
@@ -104,24 +104,24 @@
                 
                          Tel. : 06 56 69 75 41</br>
 
-                        groot.tree@galaxy.fr</br>
+                        groot.tree@galaxy.fr</br> </p>
                 
                     </div>
                      <div class="reseaux">
                         <div class="circle-logo">
-                          <img src="assets/images/logo-insta.png" width="28px">
+                          <a href="https://www.instagram.com/babygrootbabygroot/" target="_blank"><img src="assets/images/logo-insta.png" width="28px"></a>
                      </div>
                          <div class="circle-logo">
-                            <img src="assets/images/logo-tiktok.png" width="23px">
+                            <a href="https://www.tiktok.com/@groot_le_plus_fort/" target="_blank"><img src="assets/images/logo-tiktok.png" width="23px"></a>
                     </div>
                      <div class="circle-logo">
-                             <img src="assets/images/logo-twitter.png" width="30px">
+                             <a href="https://twitter.com/GrootTreeWiz" target="_blank"><img src="assets/images/logo-twitter.png" width="30px"></a>
                         </div>
                          <div class="circle-logo">
-                              <img src="assets/images/logo-youtube.png" width="33px">
+                              <a href="https://www.youtube.com/@GROOT98" target="_blank"><img src="assets/images/logo-youtube.png" width="33px"></a>
                       </div>
                          <div class="circle-logo">
-                             <img src="assets/images/logo-fb.png" width="15px">
+                             <a href="https://fr-fr.facebook.com/people/Je-Sappelle-Groot/pfbid0eEyDREHoAyXSbr2aCKLVo3bMW4Az5hqskiMroBC5bN1WHQ7wLtfgTmiZa7n6fAaml/" target="_blank"><img src="assets/images/logo-fb.png" width="15px"></a>
                         </div>
                     </div>
             </div>
