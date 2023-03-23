@@ -27,11 +27,11 @@ require 'experiences.php';
         </div>
 
         <ul class="links" id="links">
-          <li><a href="#presentation">Presentation</a></li>
-          <li><a href="">Experiences</a></li>
-          <li><a href="">Competences</a></li>
-          <li><a href="">Hobbies</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#presentation-section">Presentation</a></li>
+          <li><a href="#experience-section">Experiences</a></li>
+          <li><a href="#competences-section">Competences</a></li>
+          <li><a href="#hobbies-section">Hobbies</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
 
       </nav>
@@ -40,7 +40,7 @@ require 'experiences.php';
 
   <!-- TODO MAIN PRESENTATION -->
   <main>
-    <section class="presentation" id="presentation">
+    <section class="presentation" id="presentation-section">
       <div class="description">
         <img class="groot-mini" src="assets/images/groot-presentation.png" alt="groot picture" />
         <h1 class="title-presentation">Je s'appelle ...</h1>
@@ -61,12 +61,12 @@ require 'experiences.php';
     <div class="groot-dirt"></div>
 
     <!-- TODO MAIN EXPERIENCE -->
-    <section class="experiences">
+    <section class="experiences" id="experience-section">
       <h1 class="title-experiences">experiences</h1>
 
       <div class="articles">
         <!-- ligne timeline -->
-        <div class="barre"></div>
+        <div class="barre"><img src="./assets/images/liane.png" alt=""></div>
 
         <!-- cercle timeline -->
         <div class="circle-box">
@@ -99,7 +99,8 @@ require 'experiences.php';
     </section>
 
     <!-- TODO MAIN COMPETENCE -->
-    <section class="competences">
+
+    <section class="competences" id="competences-section">
       <h1 class="title-competences">Competences</h1>
       <div class="container">
         <input type="radio" name="slider" class="d-none" id="s1">
@@ -175,9 +176,10 @@ require 'experiences.php';
           </div>
         </div>
       </section>
+    </section>
 
       <!-- TODO MAIN HOBBIES -->
-      <section class="hobbies">
+      <section class="hobbies" id="hobbies-section">
         <h1 class="title-hobbies">hobbies</h1>
 
         <div class="container-menu">
@@ -199,16 +201,16 @@ require 'experiences.php';
             <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
           </div>
           <div class="blob blob-5" id="modal-trigger" role="button" data-target="#modal5" data-toggle="modal">
-            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+            <img src="assets/images/picto-food.png" alt="pictogram video game" class="icone" />
           </div>
           <div class="blob blob-6" id="modal-trigger" role="button" data-target="#modal6" data-toggle="modal">
-            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+            <img src="assets/images/picto-nature.png" alt="pictogram video game" class="icone" />
           </div>
           <div class="blob blob-7" id="modal-trigger" role="button" data-target="#modal7" data-toggle="modal">
-            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+            <img src="assets/images/picto-book.png" alt="pictogram video game" class="icone" />
           </div>
           <div class="blob blob-8" id="modal-trigger" role="button" data-target="#modal8" data-toggle="modal">
-            <img src="assets/images/picto-game.png" alt="pictogram video game" class="icone" />
+            <img src="assets/images/picto-draw.png" alt="pictogram video game" class="icone" />
           </div>
         </div>
 
@@ -394,7 +396,7 @@ require 'experiences.php';
   <footer>
 
     <!-- TODO FOOTER CONTACT -->
-    <section class="contact">
+    <section class="contact" id="contact-section">
       <h1 class="title-contact">Contact</h1>
       <!-- todo Formulaire -->
       <div class="content-form">
@@ -419,7 +421,7 @@ require 'experiences.php';
         <!-- todo Contact réseaux -->
         <div class="info">
           <div class="groot-footer">
-            <img class="groot-bye" src="assets/images/goot--contact.png" width="700px">
+            <img class="groot-bye" src="assets/images/goot--contact.png" width="600px">
           </div>
           <div class="contact-info">
             <p class="text-footer">Chez les <span>Gardiens de la Galaxy</span> </br>
@@ -456,5 +458,4 @@ require 'experiences.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 <script src="script.js"></script>
-
 </html>

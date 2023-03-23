@@ -46,6 +46,11 @@ body {
     flex-direction: column;
 }
 
+main {
+    background-image: url(assets/images/forest.jpg);
+    background-attachment: fixed;
+}
+
 /* TODO HEADER NAVIGATION */
 header {
     background-image: url(assets/images/groot-header.jpg);
@@ -99,7 +104,7 @@ nav ul li a:hover {
 }
 
 .description {
-    padding-top: var(--spacing-2);
+    padding-bottom: var(--spacing-2);
 }
 
 h1 {
@@ -110,6 +115,10 @@ h1 {
     filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
     font-family: 'Up-and-Down' , sans-serif;
     font-size: var(--text-size-title);
+}
+
+.presentation h1 {
+    padding-top: var(--spacing-3);
 }
 
 .title-experiences, .title-hobbies, .title-contact, .title-competences {
@@ -144,29 +153,31 @@ h1 {
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    height: 100vh;
+    height: 50vh;
 }
 
 
 /* TODO MAIN EXPERIENCE */
 .experiences {
-    height: 3650px;
-    background-color: rgb(15, 117, 63);
-    
+    height: 3700px;
+}
+
+.experiences h1 {
+    padding-top: calc(var(--spacing-3) * 2);
 }
 
 .barre {
-    height: 2780px;
-    width: 8px;
+    height: auto;
     margin: 0 auto;
-    background-color: var(--color-primary);
     position: absolute;
-    top: 90px;
+    top: -11%;
     left: 50%;
     transform: translate(-50%);    
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.196));
 }
 
 .circle-box {
+    /* display: none; */
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -174,9 +185,9 @@ h1 {
 }
 
 .circle-article {
-    width: 40px;
+    /* width: 40px;
     height: 40px;
-    clip-path: polygon(50% 0, 60% 0, 60% 100%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0, 60% 0, 60% 100%, 50% 100%, 0% 50%); */
     background-color: var(--color-primary);
     position: absolute;
     left: 50%;
@@ -205,7 +216,7 @@ h1 {
     background: var(--color-primary);
     font-size: var(--spacing-1);
     width: 30vw;
-    height: 55vh;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -220,15 +231,16 @@ h1 {
     padding: 10px 30px;
     letter-spacing: 1px;
     line-height: calc(var(--spacing-1)*1.5);
+    padding: 2rem;
 
 }
 
 .article-timeline h2 {
+    color: var(--color-tertiary);
     font-family: var(--text-family-paragraph);
     font-size: calc(var(--text-size-paragraph)*1.8);
     font-weight: bold;
-    padding: 5px 30px;
-
+    padding: 1rem 0 0 2rem;
 }
 
 .article-timeline img {
@@ -274,7 +286,12 @@ h1 {
 
 /* TODO COMPETENCES */
 .competences {
-    background: green;
+    background: var(--color-primary);
+    z-index: var(--firstplan);
+}
+
+.competences h1 {
+    padding-top: calc(var(--spacing-3) * 2);
 }
 
 .competences input {
@@ -294,7 +311,7 @@ h1 {
 .cards {
     position: relative;
     height: 600px;
-    width: 400px;
+    width: 20rem;
     margin-bottom: 0px;
     perspective: 800px;
     transform-style: preserve-3d;
@@ -412,9 +429,6 @@ h1 {
 
 /* TODO HOBBIES */
 .hobbies {
-    background-image: url(assets/images/forest.jpg);
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
 
     position: relative;
@@ -634,7 +648,6 @@ h1 {
 }
 
 .modal-image-container {
-
     width: 100%;
     height: 60%;
     border-radius: 5px 5px 0 0;
@@ -695,7 +708,7 @@ h1 {
     font-size: calc(var(--text-size-paragraph)*1.8);
     font-weight: bold;
     padding: 8px 30px;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 .text-modal {
@@ -861,26 +874,35 @@ h1 {
 }
 
 .groot-footer {
+    overflow: hidden;
     position: absolute;
     bottom: 0rem;
     left: 0px;
 }
 
 
-@media screen and (max-width: 600px) {
-    main img {
+@media screen and (max-width: 560px) {
+    header {
+        background-attachment: scroll;
+        background-position: left;
+        height: 100vh;
+    }
+
+    .description img {
         display: none;
     }
 
     nav {
+        padding: 0;
         background: none;
     }
     
     .burger {
+        color: var(--color-primary);
         display: flex;
         justify-content: end;
-        padding-right:1rem;
-        filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
+        padding: .5rem 2rem;
+        background-color: rgba(0, 0, 0, 0.9);
         transition: left 0.5s ease;
 
     }
@@ -898,17 +920,14 @@ h1 {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 30vh;
-        padding: var(--spacing2);
-        background-color: rgba(0, 0, 0, 0.8);
-        gap : 0;
-        padding-top: 2rem;
-        border-radius: 2rem;
+        height: 100%;
+        padding-bottom: 10rem;
+        background-color: rgba(0, 0, 0, 0.9);
         line-height: 0.5rem;
 }
 
     header {
-        height: 40vh;
+        height: 50vh;
         background-position: center;
 }
 
@@ -922,15 +941,20 @@ h1 {
         padding-right: 2rem;
     }
 
-    .presentation h1 {
+    ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    
+    .presentation .title-presentation {
         font-size: var(--text-size-title-mobile);
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-        padding-top: 2rem;
+        margin-left: 5%;
     }
 
     .groot-dirt {
+        background-attachment: scroll;
         background-position: center;
         height: 25vh;
     }
@@ -939,9 +963,115 @@ h1 {
     height: 100%;
     background-color: var(--color-primary);
     }
-}   
-    
-main {
-    height: 100%;
-    background-color: var(--color-primary);
+
+    .experiences h1 {
+        font-size: var(--text-size-title-mobile);
+        padding: 3rem 0 0 5%;
+    }
+
+
+    .groot-footer {
+        display: none;
+    }
+
+    .barre {
+        display: none;
+    }
+
+    .article-timeline {
+        width: 90vw;
+    }
+
+    .articles {
+        height: 100vh;
+    }
+
+    .article1 {
+        left: 50%
+    }
+
+    .article2 {
+        left: 50%;
+        top: 70%;
+    }
+    .article3 {
+        top: 126%;
+        left: 50%;
+    }
+    .article4 {
+        left: 50%;
+        top: 187%;
+    }
+    .article5 {
+        left: 50%;
+        top: 248%;
+    }
+    .article6 {
+        left: 50%;
+        top:  311.5%;
+    }
+
+    .competences {
+        padding-bottom: 1rem;
+    }
+
+    .competences h1 {
+        padding: 5% 0 10% 5%;
+    }
+
+    .hobbies {
+        height: 80vh;
+    }
+
+    .title-hobbies {
+        padding: 5% 0 0 5%;
+    }
+
+    .container-menu {
+        height: 70vw;
+        width: 70vw;
+    }
+
+    .btn-menu {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .blob {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .blob img {
+        width: 10vw;
+    }
+
+    .contact {
+        height: auto;
+        padding-bottom: 2rem;
+    } 
+
+    .title-contact {
+        padding: 5% 0 0 5%;
+    }
+
+    .content-form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        width: 80vw;
+        margin-bottom: 0;
+    }
+
+    #formulaire button {
+        width: 30vw;
+    }
+
+    .contact-info p {
+        text-align: center;
+        margin-top: 0;
+    }
 }
