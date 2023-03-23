@@ -139,14 +139,14 @@ h1 {
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    height: 500px;
+    height: 100vh;
 }
 
 
 /* TODO MAIN EXPERIENCE# */
 .experiences {
-    height: 142rem;
-    background-color: green;
+    height: 2500px;
+    background-color: rgb(15, 117, 63);
 }
 
 .barre {
@@ -185,7 +185,7 @@ h1 {
 .circle5 {top: calc(calc(var(--spacing-3)*31.5) - 15px);}
 .circle6 {top: calc(calc(var(--spacing-3)*38.5) - 15px);}
 
-.articles {
+/* .articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, calc(var(--spacing-3)*7));
@@ -193,52 +193,97 @@ h1 {
     row-gap: calc(var(--spacing-3)*7);
     margin: var(--spacing-3);
     position: relative
+} */
+
+.articles {
+    width : 100%;
+    height: 1500px;
+    position: relative;
+    padding: 80px 0 250px 0;
+    margin-bottom: 100px;
 }
 
-.article-timeline {
+/* .article-timeline {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: #D4D5A4;
     height: calc(var(--spacing-3)*7);
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+} */
+
+.article-timeline {
+    background: var(--color-primary);
+    font-size: var(--spacing-1);
+    width: 30rem;
+    min-height: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-.text-article {
+/* .text-article {
     padding: 2rem 2rem;
 }
 
 .text-article h2 {
     margin-bottom: var(--spacing-1);
-}
+} */
 
 .article-timeline img {
     width: 100%;
-    height: 100%;
-    border-radius: 0 5px 5px 0;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
     object-fit: cover;
     
 }
 
-.article-timeline:nth-child(even) {
+/* .article-timeline:nth-child(even) {
     transform: translateY(100%);
 
-}
+} */
 
-.article-timeline {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: #D4D5A4;
-}
 
-.article-timeline p {
+
+/* .article-timeline p {
     font-size: var(--spacing-1);
     line-height: 150%;
+} */
+
+/* position articles */
+.article1 {
+    top: calc(calc(var(--spacing-3)*3.5) - 15px);
+    left: calc(50% - 270px);
 }
+.article2 {
+    top: calc(calc(var(--spacing-3)*10.5) - 15px);
+    left: calc(50% + 270px);
+}
+.article3 {
+    top: calc(calc(var(--spacing-3)*17.5) - 15px);
+    left: calc(50% - 270px);
+}
+.article4 {
+    top: calc(calc(var(--spacing-3)*24.5) - 15px);
+    left: calc(50% + 270px);
+}
+.article5 {
+    top: calc(calc(var(--spacing-3)*31.5) - 15px);
+    left: calc(50% - 270px);
+}
+.article6 {
+    top: calc(calc(var(--spacing-3)*38.5) - 15px);
+    left: calc(50% + 270px);
+}
+
+
 
 /* TODO HOBBIES */
 .hobbies {
-    background-image: url(assets/images/glow-forest.jpg);
+    background-image: url(assets/images/forest.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -558,6 +603,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: var(--spacing-3);
+    background: var(--color-primary);
 }
 
 

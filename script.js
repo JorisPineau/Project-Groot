@@ -1,4 +1,4 @@
-// Animation cercle icone
+// TODO ANIMATION ICONE
 const containerMenu = document.querySelector(".container-menu");
 const btnMenu = document.querySelector(".btn-menu");
 
@@ -6,7 +6,7 @@ btnMenu.addEventListener("click", () => {
   containerMenu.classList.toggle("active");
 });
 
-// Affichage modules
+// TODO ANIMATION MODULE
 window.onload = () => {
   // récupération de tous les boutons d'ouverture de modale
   const modalButtons = document.querySelectorAll("[data-toggle=modal]");
@@ -33,26 +33,26 @@ window.onload = () => {
   }
 };
 
-// const allCircles = document.querySelector('.circle-article');
-// const allArticles = document.querySelector('.article-timeline');
+// TODO ANIMATION SCROLLING
+const allRonds = document.querySelectorAll(".circle-article");
+const allBoxes = document.querySelectorAll(".article-timeline");
 
-// const controller = new ScrollMagic.Controller()
+const controller = new ScrollMagic.Controller();
 
-// allArticles.forEach(article => {
+allBoxes.forEach((box) => {
+  for (i = 0; i < allRonds.length; i++) {
+    if (
+      allRonds[i].getAttribute("data-anim") === box.getAttribute("data-anim")
+    ) {
+      let tween = gsap.from(box, { y: -50, opacity: 0, duration: 0.5 });
 
-//     for (i = 0; i < allCircles.length; i++) {
-
-//         if(allCircles[i].getAttribute('data-anim') === article.getAttribute('data-anim')){
-
-//             let tween = gsap.from(article, {y: -50, opacity: 0, duration: 0.5})
-
-//             let scene = new ScrollMagic.Scene({
-//                 triggerElement: allCircles[i],
-//                 reverse: true
-//             })
-//             setTween(tween)
-//             .addIndicators()
-//             .addTo(controller)
-//         }
-//     }
-// });
+      let scene = new ScrollMagic.Scene({
+        triggerElement: allRonds[i],
+        reverse: false,
+      })
+        .setTween(tween)
+        // .addIndicators()
+        .addTo(controller);
+    }
+  }
+});
