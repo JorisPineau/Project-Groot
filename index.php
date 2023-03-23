@@ -93,6 +93,7 @@ require 'experiences.php';
             </article>
 
           </div>
+          
         <?php endforeach ?>
       </div>
     </section>
