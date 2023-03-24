@@ -184,7 +184,7 @@ h1 {
     height: auto;
     margin: 0 auto;
     position: absolute;
-    top: -144px;
+    top: -166px;
     left: 50%;
     transform: translate(-50%);
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.196));
@@ -1050,7 +1050,7 @@ ul {
 
 .groot-footer {
     position: absolute;
-    bottom: -65px;
+    bottom: -30px;
     left: 0px;
 }
 
@@ -1200,11 +1200,11 @@ ul {
     }
 
     .skills .summary {
-        width: 100vw;
+        width: 120vw;
     }
 
     .content-skill {
-        width: 85vw;
+        width: 90vw;
     }
 
     .hobbies {
@@ -1252,7 +1252,7 @@ ul {
     }
 
     .form {
-        width: 80vw;
+        width: 90vw;
         margin-bottom: 0;
     }
 
