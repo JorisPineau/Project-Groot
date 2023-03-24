@@ -20,7 +20,7 @@ require 'experiences.php';
         <div class="logo"></div>
         <div id="mySidenav" class="burger">
           <a id="closeBtn" href="#links" class="close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple" class="bi bi-list" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </a>
