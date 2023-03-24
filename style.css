@@ -45,7 +45,21 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.btn-arrow {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+.icone-arrow {
+    width: 80px;
+}
 main {
     background-image: url(assets/images/forest.jpg);
     background-attachment: fixed;
@@ -917,7 +931,7 @@ ul {
 
 .contact {
     background: var(--color-primary);
-    height: 100vh;
+    height: 1000px;
 }
 
 .content-form {
@@ -984,7 +998,7 @@ ul {
 }
 
 ::placeholder {
-    color: var(--color-secondary);
+    color: black;
 }
 
 .info {
@@ -1036,7 +1050,7 @@ ul {
 
 .groot-footer {
     position: absolute;
-    bottom: 0rem;
+    bottom: 0;
     left: 0px;
     transform: translateY(5%);
 }
@@ -1148,7 +1162,8 @@ ul {
     }
 
     .article1 {
-        transform: translateX(25%);
+        left: 50%
+        /* transform: translateX(23.5%); */
     }
 
     .article2 {
@@ -1271,4 +1286,8 @@ ul {
         background-position: center;
         background-size: 165%;
     }      
+
+    .icone-arrow {
+        width: 80px;
+    }
 }
