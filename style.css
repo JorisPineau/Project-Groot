@@ -184,7 +184,7 @@ h1 {
     height: auto;
     margin: 0 auto;
     position: absolute;
-    top: -11%;
+    top: -144px;
     left: 50%;
     transform: translate(-50%);
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.196));
@@ -1050,9 +1050,8 @@ ul {
 
 .groot-footer {
     position: absolute;
-    bottom: 0;
+    bottom: -65px;
     left: 0px;
-    transform: translateY(5%);
 }
 
 
