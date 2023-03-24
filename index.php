@@ -114,7 +114,7 @@ require 'experiences.php';
 
             <div class="card">
               <div class="image">
-                <img src="assets/images/grootabaisser.jpg" alt="">
+                <img src="assets/images/elastic.jpg" alt="">
               </div>
 
               <div class="infos">
@@ -126,10 +126,10 @@ require 'experiences.php';
           <label for="s2" id="slide2">
             <div class="card">
               <div class="image">
-                <img src="assets/images/grootconfiant.jpg" alt="">
+                <img src="assets/images/tentacle.jpeg" alt="">
               </div>
               <div class="infos">
-                <h2>Tentacules de vigne</hé>
+                <h2>Tentacules de vigne</h2>
               </div>
             </div>
           </label>
@@ -137,10 +137,10 @@ require 'experiences.php';
           <label for="s3" id="slide3">
             <div class="card">
               <div class="image">
-                <img src="assets/images/grootchampdebataille.jpg" alt="">
+                <img src="assets/images/grootsemidodo.jpeg" alt="">
               </div>
               <div class="infos">
-                <h2>Génération de feuilles</h2>
+                <h2>Génération de plantes</h2>
               </div>
             </div>
           </label>
@@ -148,7 +148,7 @@ require 'experiences.php';
           <label for="s4" id="slide4">
             <div class="card">
               <div class="image">
-                <img src="assets/images/grootguerre.jpg" alt="">
+                <img src="assets/images/bouclier-branch.jpeg" alt="">
               </div>
               <div class="infos">
                 <h2>Bouclier de branche</h2>
@@ -159,7 +159,7 @@ require 'experiences.php';
           <label for="s5" id="slide5">
             <div class="card">
               <div class="image">
-                <img src="assets/images/grootprets.jpg" alt="">
+                <img src="assets/images/tenatculedevigne.jpeg" alt="">
               </div>
               <div class="infos">
                 <h2>Pointes de brindilles</h2>
@@ -170,6 +170,55 @@ require 'experiences.php';
       </div>
       <section class="description-skill">
         <div class="container-skill">
+          <div class="skills">
+
+        <div class="summary">
+
+            <ul class="items_wrapper">
+                <li class="item">
+                    <div class="icon icon-force">
+                        <img src="./assets/images/force.png" />
+                    </div>
+                    <div class="progress">
+                        <div class="bar force"></div>
+                    </div>
+                    <div class="percentage">70%</div>
+                </li>
+
+                <li class="item">
+                <div class="icon icon-force">
+                  <img src="./assets/images/shield.png" />
+                </div>
+                    <div class="progress">
+                        <div class="bar durabiliter"></div>
+                    </div>
+                    <div class="percentage right bold">85%</div>
+                </li>
+
+                <li class="item clearfix">
+                <div class="icon icon-force">
+                   <img src="./assets/images/mobility.png" />
+                </div>
+                    <div class="icon icon-manipulation"></div>
+                    <div class="progress">
+                        <div class="bar manipulation"></div>
+                    </div>
+                    <div class="percentage right bold">70%</div>
+                </li>
+
+                <li class="item clearfix">
+                <div class="icon icon-force">
+                 <img src="./assets/images/speed.png" />
+                </div>
+                    <div class="icon icon-guerison"></div>
+                    <div class="progress">
+                        <div class="bar guerison"></div>
+                    </div>
+                    <div class="percentage right bold">75%</div>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="content-skill">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque dolor provident velit, doloribus accusantium dolore, optio nihil tempore, repudiandae cumque voluptas perspiciatis reprehenderit! Est, natus quidem! Culpa, nobis iste.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque dolor provident velit, doloribus accusantium dolore, optio nihil tempore, repudiandae cumque voluptas perspiciatis reprehenderit! Est, natus quidem! Culpa, nobis iste.</p>
@@ -403,7 +452,7 @@ require 'experiences.php';
         <div class="form">
           <form action="success.php" id="formulaire" method="POST">
             <input type="text" id="first-name" name="user_firstname" placeholder="Prénom" required>
-            <input type="text" id="last-name" name="user_lastName" placeholder="Nom" required>
+            <input type="text" id="last-name" name="user_lastname" placeholder="Nom" required>
             <input type="email" id="email" name="user_email" placeholder="Email" required>
             <input type="number" id="number" name="user_number" placeholder="Numéro" required>
             <label for="user_origin">Veuillez séléctionner votre origine</label>

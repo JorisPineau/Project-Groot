@@ -9,7 +9,7 @@
     --color-primary: #D4D5A4;
     --color-secondary: rgb(2, 15, 2);
     --color-tertiary: #1A4C1F;
-    --color-degrade: color: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    --color-degrade: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     --color-text: #7DD84C;
     --color-contact: #57B925;
     --light:white; 
@@ -172,7 +172,7 @@ h1 {
     position: absolute;
     top: -11%;
     left: 50%;
-    transform: translate(-50%);    
+    transform: translate(-50%);
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.196));
 }
 
@@ -260,38 +260,39 @@ h1 {
 /* position articles */
 .article1 {
     top: calc(100px - 15px);
-    left: calc(50% - 350px);
-    
+    left: calc(50% - 370px);
 }
 .article2 {
     top: calc(650px - 15px);
-    left: calc(50% + 350px);
+    left: calc(50% + 370px);
 }
 .article3 {
     top: calc(1200px - 15px);
-    left: calc(50% - 350px);
+    left: calc(50% - 370px);
 }
 .article4 {
     top: calc(1750px - 15px);
-    left: calc(50% + 350px);
+    left: calc(50% + 370px);
 }
 .article5 {
     top: calc(2300px - 15px);
-    left: calc(50% - 350px);
+    left: calc(50% - 370px);
 }
 .article6 {
     top: calc(2850px - 15px);
-    left: calc(50% + 350px);
+    left: calc(50% + 370px);
 }
 
 /* TODO COMPETENCES */
 .competences {
     background: var(--color-primary);
     z-index: var(--firstplan);
+    padding-bottom: 1rem;
 }
 
 .competences h1 {
     padding-top: calc(var(--spacing-3) * 2);
+    margin-bottom: 3rem;
 }
 
 .competences input {
@@ -332,8 +333,7 @@ h1 {
 .cards .card {
     position: relative;
     height: 100%;
-    background-color: #10611b;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0px;
 }
 
@@ -349,7 +349,6 @@ h1 {
     display: flex;
     text-align: end;
     margin: 0px;
-
 }
 
 .infos {
@@ -359,27 +358,41 @@ h1 {
 }
 
 .infos h2 {
-    font-size: 20px;
+    font-family: var(--text-family-paragraph);
+    font-size: 25px;
     color: var(--current-color1);
-    color: white;
+    color: var(--color-primary);
     margin-top: .5rem;
+    transform: translateY(-220%);
 }
 
 .container-skill {
   width: 90vw;
   margin: 5rem auto;
-  border-radius: 5px;
   gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .content-skill {
   width: 50vw;
-  min-height: 100px;
-  height: auto;
+  height: 100%;
   margin: auto;
   background: var(--color-primary);
   border-radius: 5px;
-  padding: 2rem;
+  padding: 1rem;
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.3);
+  
+}
+
+.content-skill p {
+    font-family: var(--text-family-paragraph);
+    font-size: var(--text-size-paragraph);
+
+    letter-spacing: 1px;
+    line-height: calc(var(--spacing-1)*1.5);
+    padding: 3rem;
 }
 
 #s1:checked~.cards #slide4,
@@ -398,6 +411,7 @@ h1 {
 #s5:checked~.cards #slide4 {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(-35%, 0, -120px);
+    border-radius: 5px;
 }
 
 #s1:checked~.cards #slide1,
@@ -426,6 +440,149 @@ h1 {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(70%, 0, -220px);
 }
+
+ul { 
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  list-style: none;
+}
+
+.summary ul li img {
+  width: 2.5rem;
+  margin: 2px 0 0 10px;
+}
+
+
+.skills .summary{
+    width: 45vw;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.skills .summary .summary_header{
+    font-size: 30px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+    line-height: 30px;
+}
+
+.skills .summary .items_wrapper .item{
+    position: relative;
+    height: 45px;
+    color:#22220f !important;
+    background: #D4D5A4;
+    /*border-top:5px solid #dfe0a0;*/
+    border-radius: 5px; 
+    padding-right: 9px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    box-shadow: 2px 0px 15px rgba(0, 0, 0, 45%);
+}
+
+.skills .summary .items_wrapper .item .icon{
+    width: 55px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display:block;
+    font-family: 'FontAwesome', sans-serif;
+    font-weight:normal;	
+    color:#8f3e2a;
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills .summary .items_wrapper .progress{
+    margin: 0;
+    position: absolute;
+    left: 60px;
+    right: 70px;
+    top: 18px;
+    height: 10px;
+    margin-top: 2px;
+}
+
+.skills .summary .items_wrapper .progress .bar{
+  border-radius: 17px;
+  background: #D4D5A4;
+  border-radius: 4px;
+}
+
+.skills .summary .items_wrapper .percentage{
+    color: var(--color-tertiary);
+    font-size: 20px;
+  	font-weight:700;		
+	  font-family: 'Roboto'; 
+    float: right;
+}
+
+.bar { 
+	line-height: 10px;
+    height: 13px;
+    bottom: 1px;
+	margin: 0;
+    padding: 1px;
+     background-color: var(--color-contact) !important;
+    /*linear-gradient(135deg, rgb(0, 165, 0) 20%, rgb(0, 189, 16) 50%, rgb(115, 255, 0))!important; */
+	position:absolute;
+}
+
+.force { 
+  width:70%;  
+  animation:force 2s ease-out;
+}
+.durabiliter { 
+  width:85%;
+  animation:durabiliter 2s ease-out; 
+}
+.manipulation { 
+  width:70%;  
+  animation:manipulation 2s ease-out;
+}
+.guerison { 
+  width:75%;  
+  animation:guerison 2s ease-out;
+}
+.longeviter { 
+  width:100%;  
+  animation:longeviter 2s ease-out;
+}
+.combattant { 
+    width:75%;  
+    animation:combattant 2s ease-out;
+}
+  .multilinguisme { 
+    width:100%;  
+    animation:multilinguisme 2s ease-out;
+ } 
+
+
+
+@keyframes force { 
+  0%  { width:0px;} 
+  100%{ width:70%;}  
+}
+@keyframes durabiliter {
+  0%  { width:0px;} 
+  100%{ width:85%;}  
+}
+@keyframes manipulation {
+  0%  { width:0px;}
+  100%{ width:70%;}
+}
+@keyframes guerison {
+  0%  { width:0px;} 
+  100%{ width:75%;}  
+}
+@keyframes longeviter {
+  0%  { width:0px;} 
+  100%{ width:100%;}  
+}
+
 
 /* TODO HOBBIES */
 .hobbies {
@@ -991,7 +1148,7 @@ h1 {
     }
 
     .article1 {
-        left: 50%
+        transform: translateX(25%);
     }
 
     .article2 {
@@ -1004,7 +1161,7 @@ h1 {
     }
     .article4 {
         left: 50%;
-        top: 214%%;
+        top: 214%;
     }
     .article5 {
         left: 50%;
@@ -1021,6 +1178,19 @@ h1 {
 
     .competences h1 {
         padding: 5% 0 10% 5%;
+        font-size: var(--text-size-title-mobile);
+    }
+
+    .container-skill {
+        flex-direction: column;
+    }
+
+    .skills .summary {
+        width: 100vw;
+    }
+
+    .content-skill {
+        width: 85vw;
     }
 
     .hobbies {
@@ -1029,6 +1199,7 @@ h1 {
 
     .title-hobbies {
         padding: 5% 0 0 5%;
+        font-size: var(--text-size-title-mobile);
     }
 
     .container-menu {
@@ -1057,6 +1228,7 @@ h1 {
 
     .title-contact {
         padding: 5% 0 0 5%;
+        font-size: var(--text-size-title-mobile);
     }
 
     .content-form {
