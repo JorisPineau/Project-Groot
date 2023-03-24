@@ -901,13 +901,13 @@ h1 {
         color: var(--color-primary);
         display: flex;
         justify-content: end;
-        padding: .5rem 2rem;
+        padding: .5rem 2rem 0 .5rem;
         background-color: rgba(0, 0, 0, 0.9);
         transition: left 0.5s ease;
 
     }
 
-.burger svg {
+    .burger svg {
         width: 40px;
         height: 40px;
     }
@@ -992,23 +992,23 @@ h1 {
 
     .article2 {
         left: 50%;
-        top: 70%;
+        top: 80%;
     }
     .article3 {
-        top: 126%;
+        top: 144%;
         left: 50%;
     }
     .article4 {
         left: 50%;
-        top: 187%;
+        top: 214%%;
     }
     .article5 {
         left: 50%;
-        top: 248%;
+        top: 283%;
     }
     .article6 {
         left: 50%;
-        top:  311.5%;
+        top: 355.5%;
     }
 
     .competences {
@@ -1074,4 +1074,25 @@ h1 {
         text-align: center;
         margin-top: 0;
     }
+
+    .modal {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .modal-container.active .modal {
+        top:50%;
+    }
+
+    .modal-image-container.img1  {
+        background-position: 0;
+    }        
+    .modal-image-container.img2  {
+        background-position: 0;
+        background-size: cover;
+    }      
+    .modal-image-container.img3  {
+        background-position: center;
+        background-size: 165%;
+    }      
 }
