@@ -760,6 +760,7 @@ h1 {
 
 .contact {
     background: var(--color-primary);
+    height: 100vh;
 }
 
 .content-form {
@@ -775,7 +776,6 @@ h1 {
     padding: var(--spacing-2);
     box-shadow: 0px 2px 20px 1px rgba(35, 160, 35, 0.3);
     border-radius: var(--spacing-0);  
-    margin-bottom: var(--spacing-2);
     gap: calc(var(--spacing-3)*1.5);
 }
     
@@ -857,7 +857,7 @@ h1 {
     gap: var(--spacing-1);
 }
     
-    .circle-logo {
+.circle-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -865,7 +865,11 @@ h1 {
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    }
+}
+
+.circle-logo a {
+    transform: translateY(5%);
+}
 
 .circle-logo:hover {
     background: var(--color-contact);
@@ -874,10 +878,10 @@ h1 {
 }
 
 .groot-footer {
-    overflow: hidden;
     position: absolute;
     bottom: 0rem;
     left: 0px;
+    transform: translateY(5%);
 }
 
 
