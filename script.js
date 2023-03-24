@@ -56,3 +56,12 @@ allBoxes.forEach((box) => {
     }
   }
 });
+
+const btn = document.querySelector(".btn-arrow");
+btn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});

@@ -13,6 +13,9 @@ require 'experiences.php';
 </head>
 
 <body>
+  <div class="btn-arrow">
+    <img src="assets/images/arrow-up-solid.svg" class="icone-arrow">
+  </div>
   <!-- TODO EN-TÊTE HEADER/NAVIGATION -->
   <header>
     <section id="accueil">
